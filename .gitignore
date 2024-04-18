@@ -26,8 +26,5 @@ dist-ssr
 # ignore todo file
 todo
 
-# ignore db.json
-api/db.json
-
 # ignore diagrams
 diagrammes
