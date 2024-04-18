@@ -67,7 +67,7 @@ const Checkout = () => {
         })),
       };  
 
-      const response = await axios.post('http://localhost:3000/orders', order);
+      const response = await axios.post('https://bm-ecommerce-backend.onrender.com/orders', order);
       return response.data.id;
     } catch (error) {
       console.error('Error creating order:', error);
@@ -80,7 +80,7 @@ const Checkout = () => {
     try {
       for (const item of cart.items) {
         const updatedStock = parseInt(item.quantity_stock) - parseInt(item.quantity);
-        await axios.patch(`http://localhost:3000/products/${item.id}`, { quantity_stock: updatedStock });
+        await axios.patch(`https://bm-ecommerce-backend.onrender.com/products/${item.id}`, { quantity_stock: updatedStock });
         console.log(updatedStock)
         console.log(item.id)
         console.log(item.quantity)
@@ -112,7 +112,7 @@ const Checkout = () => {
 
   const handleOrderDelivered = async () => {
     try {
-      await axios.patch(`http://localhost:3000/orders/${orderID}`, { order_status: 'delivered' });
+      await axios.patch(`https://bm-ecommerce-backend.onrender.com/orders/${orderID}`, { order_status: 'delivered' });
       Swal.fire({
         icon: 'success',
         title: 'Order marked as delivered!',

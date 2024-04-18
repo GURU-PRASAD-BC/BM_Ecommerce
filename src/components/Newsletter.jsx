@@ -52,7 +52,7 @@ const Newsletter = () => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     if (email) {
-      await axios.post('http://localhost:3000/newsletter', { email })
+      await axios.post('https://bm-ecommerce-backend.onrender.com/newsletter', { email })
       setEmail('')
       Swal.fire({
         icon: 'success',
