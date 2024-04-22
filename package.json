@@ -1,5 +1,5 @@
 {
-  "name": "home-decor",
+  "name": "bm-garments",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview" 
+    "preview": "vite preview"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
@@ -19,14 +19,14 @@
     "bootstrap": "^5.3.2",
     "emailjs-com": "^3.2.0",
     "js-cookie": "^3.0.5",
-    "razorpay": "^2.9.2",
+    "razorpay": "^0.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.1",
     "recharts": "^2.10.3",
     "scrollreveal": "^4.0.9",
     "styled-components": "^6.1.1",
-    "sweetalert2": "^11.10.1"
+    "sweetalert2": "^11.6.13"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",
